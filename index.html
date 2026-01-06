@@ -1,184 +1,188 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Felices Reyes, Belén</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <!-- Partículas de fondo -->
     <div id="particles"></div>
 
     <!-- Pantalla de bienvenida -->
     <div id="welcome-screen" class="screen active">
-        <div class="welcome-content">
-            <div class="crown-icon">👑</div>
-            <h1 class="welcome-title">Felices Reyes</h1>
-            <p class="welcome-subtitle">Un regalo especial te espera...</p>
-            <p class="welcome-name">Para Belén</p>
-            <button id="open-gift" class="magic-button">
-                <span class="button-text">Abrir Regalo</span>
-                <span class="button-icon">✨</span>
-            </button>
-        </div>
+      <div class="welcome-content">
+        <div class="crown-icon">👑</div>
+        <h1 class="welcome-title">Felices Reyes</h1>
+        <p class="welcome-subtitle">Un regalo especial te espera...</p>
+        <p class="welcome-name">Para Belén</p>
+        <button id="open-gift" class="magic-button">
+          <span class="button-text">Abrir Regalo</span>
+          <span class="button-icon">✨</span>
+        </button>
+      </div>
     </div>
 
     <!-- Tarjeta de regalo principal -->
     <div id="gift-card" class="screen">
-        <div class="card-container">
-            <!-- Encabezado de la tarjeta -->
-            <header class="card-header">
-                <div class="decorative-line left"></div>
-                <h2 class="card-title">Tu Regalo de Reyes</h2>
-                <div class="decorative-line right"></div>
-            </header>
+      <div class="card-container">
+        <!-- Encabezado de la tarjeta -->
+        <header class="card-header">
+          <div class="decorative-line left"></div>
+          <h2 class="card-title">Tu Regalo de Reyes mi amor</h2>
+          <div class="decorative-line right"></div>
+        </header>
 
-            <!-- Mensaje personal -->
-            <div class="personal-message fade-in-section">
-                <p class="message-intro">Querida Belén,</p>
-                <p class="message-text">
-                    Los Reyes Magos me han ayudado a preparar algo especial para ti.
-                    Sé lo importante que es para ti crear espacios que te hagan sentir en paz,
-                    rodearte de naturaleza y cuidar cada detalle de tu rincón favorito.
-                    Por eso, cuando vi esto, supe inmediatamente que tenía que ser tuyo.
-                </p>
-            </div>
-
-            <!-- Galería de imágenes del regalo -->
-            <div class="gift-gallery fade-in-section">
-                <h3 class="section-title">
-                    <span class="star">⭐</span>
-                    Tu Regalo
-                    <span class="star">⭐</span>
-                </h3>
-
-                <div class="gallery-grid">
-                    <!-- Imagen principal -->
-                    <div class="gallery-item main-image">
-                        <div class="image-placeholder" data-image="1">
-                            <img src="images/regalo-1.jpg" alt="Imagen principal del regalo">
-                            <div class="placeholder-text">
-                                <span class="placeholder-icon">📷</span>
-                                <span>Imagen Principal</span>
-                                <span class="placeholder-hint">800x600px recomendado</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Imágenes secundarias -->
-                    <div class="gallery-item">
-                        <div class="image-placeholder" data-image="2">
-                            <img src="images/regalo-2.jpg" alt="Detalle del regalo">
-                            <div class="placeholder-text">
-                                <span class="placeholder-icon">📷</span>
-                                <span>Detalle 1</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="gallery-item">
-                        <div class="image-placeholder" data-image="3">
-                            <img src="images/regalo-3.jpg" alt="Otro ángulo del regalo">
-                            <div class="placeholder-text">
-                                <span class="placeholder-icon">📷</span>
-                                <span>Detalle 2</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Descripción del regalo -->
-            <div class="gift-description fade-in-section">
-                <div class="description-card">
-                    <h3 class="description-title">¿Qué es?</h3>
-                    <p class="description-text">
-                        Es un edredón que combina la belleza natural que tanto te gusta
-                        con la comodidad que mereces en tu descanso.
-                    </p>
-                    <p class="description-text">
-                        Se lo importante que es para ti sentirte a gusto en tu habitación, rodeada de plantas y flores. 🌿
-                    </p>
-                    <p class="description-text">
-                        Porque te mereces descansar en un espacio tan bonito como tú. 💙
-                    </p>
-                </div>
-            </div>
-
-            <!-- Más imágenes opcionales -->
-            <div class="extra-images fade-in-section">
-                <div class="extra-gallery">
-                    <div class="extra-item">
-                        <div class="image-placeholder" data-image="4">
-                            <img src="images/regalo-4.jpg" alt="Imagen adicional">
-                            <div class="placeholder-text">
-                                <span class="placeholder-icon">📷</span>
-                                <span>Extra 1</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="extra-item">
-                        <div class="image-placeholder" data-image="5">
-                            <img src="images/regalo-5.jpg" alt="Imagen adicional">
-                            <div class="placeholder-text">
-                                <span class="placeholder-icon">📷</span>
-                                <span>Extra 2</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Información de recogida -->
-            <div class="gift-description fade-in-section">
-                <div class="description-card pickup-card">
-                    <div class="pickup-icon">📦</div>
-                    <h3 class="description-title">¿Cómo lo recojo?</h3>
-                    <p class="description-text">
-                        Tu regalo te espera en IKEA.
-                    </p>
-                    <p class="description-text pickup-date">
-                        <strong>Día de recogida: 8 de enero</strong>
-                    </p>
-                    <p class="description-text">
-                        ¡Iremos juntos a por él! 🚗
-                    </p>
-                </div>
-            </div>
-
-            <!-- Mensaje final -->
-            <div class="final-message fade-in-section">
-                <div class="heart-divider">
-                    <span class="heart">💚</span>
-                </div>
-                <p class="closing-text">
-                    Te quiero muchísimo y espero que este regalo te ayude a crear
-                    ese refugio de paz que tanto valoras.
-                    Que cada noche te recuerde lo especial que eres para mí.
-                </p>
-                <p class="signature">Con todo mi amor,</p>
-                <p class="signature">Carlos 💙</p>
-            </div>
-
-            <!-- Pie de la tarjeta -->
-            <footer class="card-footer">
-                <div class="footer-decoration">
-                    <span class="magic-star">✦</span>
-                    <span class="magic-star">✦</span>
-                    <span class="magic-star">✦</span>
-                </div>
-                <p class="footer-text">Felices Reyes 2026</p>
-            </footer>
+        <!-- Mensaje personal -->
+        <div class="personal-message fade-in-section">
+          <p class="message-intro">Querida Belén,</p>
+          <p class="message-text">
+            Los Reyes Magos me han ayudado a preparar algo especial para ti. Sé
+            lo importante que es para ti crear espacios que te hagan sentir en
+            paz, rodearte de naturaleza y cuidar cada detalle de tu rincón
+            favorito. Por eso, cuando vi esto, supe inmediatamente que tenía que
+            ser tuyo.
+          </p>
         </div>
+
+        <!-- Galería de imágenes del regalo -->
+        <div class="gift-gallery fade-in-section">
+          <h3 class="section-title">
+            <span class="star">⭐</span>
+            Tu Regalo
+            <span class="star">⭐</span>
+          </h3>
+
+          <div class="gallery-grid">
+            <!-- Imagen principal -->
+            <div class="gallery-item main-image">
+              <div class="image-placeholder" data-image="1">
+                <img
+                  src="images/regalo-1.jpg"
+                  alt="Imagen principal del regalo"
+                />
+                <div class="placeholder-text">
+                  <span class="placeholder-icon">📷</span>
+                  <span>Imagen Principal</span>
+                  <span class="placeholder-hint">800x600px recomendado</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Imágenes secundarias -->
+            <div class="gallery-item">
+              <div class="image-placeholder" data-image="2">
+                <img src="images/regalo-2.jpg" alt="Detalle del regalo" />
+                <div class="placeholder-text">
+                  <span class="placeholder-icon">📷</span>
+                  <span>Detalle 1</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="gallery-item">
+              <div class="image-placeholder" data-image="3">
+                <img src="images/regalo-3.jpg" alt="Otro ángulo del regalo" />
+                <div class="placeholder-text">
+                  <span class="placeholder-icon">📷</span>
+                  <span>Detalle 2</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Descripción del regalo -->
+        <div class="gift-description fade-in-section">
+          <div class="description-card">
+            <h3 class="description-title">¿Qué es?</h3>
+            <p class="description-text">
+              Es un edredón que combina la belleza natural que tanto te gusta
+              con la comodidad que mereces en tu descanso.
+            </p>
+            <p class="description-text">
+              Se lo importante que es para ti sentirte a gusto en tu habitación,
+              rodeada de plantas y flores. 🌿
+            </p>
+            <p class="description-text">
+              Porque te mereces descansar en un espacio tan bonito como tú. 💙
+            </p>
+          </div>
+        </div>
+
+        <!-- Más imágenes opcionales -->
+        <div class="extra-images fade-in-section">
+          <div class="extra-gallery">
+            <div class="extra-item">
+              <div class="image-placeholder" data-image="4">
+                <img src="images/regalo-4.jpg" alt="Imagen adicional" />
+                <div class="placeholder-text">
+                  <span class="placeholder-icon">📷</span>
+                  <span>Extra 1</span>
+                </div>
+              </div>
+            </div>
+            <div class="extra-item">
+              <div class="image-placeholder" data-image="5">
+                <img src="images/regalo-5.jpg" alt="Imagen adicional" />
+                <div class="placeholder-text">
+                  <span class="placeholder-icon">📷</span>
+                  <span>Extra 2</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Información de recogida -->
+        <div class="gift-description fade-in-section">
+          <div class="description-card pickup-card">
+            <div class="pickup-icon">📦</div>
+            <h3 class="description-title">¿Cómo lo recojo?</h3>
+            <p class="description-text">Tu regalo te espera en IKEA.</p>
+            <p class="description-text pickup-date">
+              <strong>Día de recogida: 8 de enero</strong>
+            </p>
+            <p class="description-text">¡Iremos juntos a por él! 🚗</p>
+          </div>
+        </div>
+
+        <!-- Mensaje final -->
+        <div class="final-message fade-in-section">
+          <div class="heart-divider">
+            <span class="heart">💚</span>
+          </div>
+          <p class="closing-text">
+            Te quiero muchísimo y espero que este regalo te ayude a crear ese
+            refugio de paz que tanto valoras. Que cada noche te recuerde lo
+            especial que eres para mí.
+          </p>
+          <p class="signature">Con todo mi amor,</p>
+          <p class="signature">Carlos 💙</p>
+        </div>
+
+        <!-- Pie de la tarjeta -->
+        <footer class="card-footer">
+          <div class="footer-decoration">
+            <span class="magic-star">✦</span>
+            <span class="magic-star">✦</span>
+            <span class="magic-star">✦</span>
+          </div>
+          <p class="footer-text">Felices Reyes 2026</p>
+        </footer>
+      </div>
     </div>
 
     <!-- Confeti canvas -->
     <canvas id="confetti-canvas"></canvas>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
